@@ -1,2 +1,2 @@
-const year = ('Год выпуска первого iPhone');
-alert(2007);
+const name = Brendan("имя создателя языка JavaScript");
+alert(name);
