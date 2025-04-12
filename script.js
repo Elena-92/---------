@@ -1,6 +1,4 @@
-let number1 = 10;
-let number2 =2;
-alert(number1 + number2);
-alert(number1 - number2);
-alert(number1 * number2);
-alert(number1 / number2);
+let num = 2;
+let power = 5;
+let result =num **power;
+alert(num**power);
