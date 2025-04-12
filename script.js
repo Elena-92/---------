@@ -1,2 +1,2 @@
-let a = 20;
-alert(a);
+const year = ('Год выпуска первого iPhone');
+alert(2007);
