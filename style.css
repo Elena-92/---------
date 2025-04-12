@@ -299,4 +299,102 @@ button {
 .footer__text {
   font-size: 24px;
   font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    background-image: none;
+    background-image: url(img/starlittle1.png), url(img/Starlittle.png), url(img/startop.png), url(img/Starlittle2.png), url(img/Starlittle3.png);
+    background-repeat: no-repeat;
+    background-position: 38px 97px, 92px 64px, 220px 0px, 304px 620px, 257px 580px;
+    text-align: center;
+    padding-bottom: 147px;
+  }
+  .top__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    padding-top: 147px;
+    max-width: 262px;
+    margin-left: 36px;
+  }
+  .top__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    height: 60px;
+  }
+  .top__text-1 {
+    font-size: 16px;
+  }
+  .top__button-link {
+    font-size: 16px;
+  }
+  .scrollbar {
+    height: 51px;
+    gap: 27px;
+  }
+  .scrollbar__item {
+    gap: 27px;
+    align-items: center;
+  }
+  .scrollbar__text {
+    font-size: 16px;
+    gap: 6px;
+  }
+  .scrollbar__mobile {
+    display: flex;
+  }
+  .container {
+    display: none;
+  }
+  .game-box {
+    background-image: none;
+    padding-bottom: 48px;
+  }
+  .game-box__title {
+    font-size: 40px;
+    line-height: 49px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .game-box__content {
+    gap: 24px;
+  }
+  .game-box__cart {
+    display: block;
+  }
+  .game-box__img {
+    width: 343px;
+    height: 284px;
+  }
+  .game-box__description {
+    padding: 29px;
+  }
+  .game-box__number {
+    padding-bottom: 16px;
+    font-size: 32px;
+    line-height: 100%;
+  }
+  .game-box__text {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 32px;
+  }
+  .game-box__button {
+    padding: 16px 110px;
+    font-size: 16px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
