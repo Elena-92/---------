@@ -1,4 +1,2 @@
-let num = 2;
-let power = 5;
-let result =num **power;
-alert(num**power);
+const year = Number(`Год выпуска первого iPhone`);
+alert(2007);
