@@ -1,2 +1,2 @@
-const year = ('Год выпуска первого iPhone');
-alert(2007);
+let newName = String(prompt(`Как ваше имя?`));
+alert(`Привет, ${newName}!`);
