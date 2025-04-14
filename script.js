@@ -1,2 +1,2 @@
-let a = 20;
-alert(a);
+let userName = `Brendan`;
+alert(userName);
