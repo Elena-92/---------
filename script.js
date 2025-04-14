@@ -1,2 +1,2 @@
-const year = Number(`Год выпуска первого iPhone`);
-alert(2007);
+let a = 10;
+alert(a);
