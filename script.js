@@ -1,4 +1,4 @@
-let c = Number('0');
+let c = Number('10');
 
 if (c>0 && c<10) {alert('Верно');
   
