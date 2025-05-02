@@ -1,9 +1,7 @@
-let password = String('пароль' );
-let password2 = String('кошка');
-let answer = String(prompt('Введите пароль'));
-answer = answer.toLocaleLowerCase();
-if (answer === 'кошка') {alert('Пароль введен верно');
+let c = Number('13');
+
+if (c>0 && c<10) {alert('Верно');
   
-} else { alert('Пароль введен неправильно')
+} else { alert('Неверно')
   
 };
