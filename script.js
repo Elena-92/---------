@@ -1,6 +1,6 @@
-let c = Number('2');
-
-if (c>0 && c<10) {alert('Верно');
+let d = Number('59');
+let e = Number('188');
+if (d>100 || e>100) {alert('Верно');
   
 } else { alert('Неверно')
   
