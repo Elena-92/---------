@@ -332,9 +332,12 @@ button {
   }
   .top__text-1 {
     font-size: 16px;
+    margin-left: 20px;
   }
-  .top__button-link {
+  .top__button{
     font-size: 16px;
+    margin-left: 44px;
+    width: 285px;
   }
   .scrollbar {
     height: 51px;

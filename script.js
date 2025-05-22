@@ -1,77 +1,51 @@
-let password = String('пароль' );
-let password2 = String('кошка');
-let answer = String(prompt('Введите пароль'));
-answer = answer.toLocaleLowerCase();
-if (answer === 'кошка') {alert('Пароль введен верно');
-
-} else { alert('Пароль введен неправильно')
-
+//Task#1
+let b = 0;
+while (b < 2) {
+    alert("Привет"); 
+    b ++; 
 };
 
-
-let c = Number('0');
-let d = Number('10');
-
-if (c>0 && c<10) {alert('Верно');
+//Task#2
+let a = 0;
+while (a < 5) {
+    alert(a);
+    a ++;
+};
+ //Task#3
+let c = 7;
+while (c <= 22) {
+    alert(c);
+    c ++;
 };
 
-
-
-
-    let dd = Number('59');
-    let e = Number('188');
-    if (d>100 || e>100) {alert('Верно');
+//Task#4
+const obj = {
+    "Коля": 200,
+    "Вася": 300,
+    "Петя": 400,
     
-    } else { alert('Неверно')
+ }
+ 
+ for (let key in obj) {
+    alert(`${key}: ${obj[key]}`);
+ };
+
+
+//Task#5
+ let n = 1000;
+    let num = 1;
+    do {
+    n /=2;
+    alert(n);
+    alert(num);
+    num ++;
+    } while (n >= 50);
+
+//Task#6
+    const firstFriday = 1;
+    const monthDays = 31;
+    for (let index = 5; index <= monthDays; index += 7) {
+    alert("Сегодня пятница " + index +"-ое число. Нужно подготовить отчет.");
+   
     };
-
-
-    let a = '2';
-    let b = '3';
-    // Код выше изменять менять нельзя. Чтобы решить задачу исправьте код ниже:
-    alert (parseInt(a) + parseInt(b));
-
-
-    let monthNumber = Number(prompt('Введите месяц'));
-
-    switch (monthNumber) {
-    case 1:
-    alert('зима');
-    break;
-    case 2:
-    alert('зима');
-    break;
-    case 3:
-    alert('весна');
-    break;
-    case 4:
-    alert('весна');
-    break;
-    case 5:
-    alert('весна');
-    break;  
-    case 6:
-    alert('лето');
-    break;
-    case 7:
-    alert('лето');
-    break
-    case 8:
-    alert('лето');
-    break;  
-    case 9:
-    alert('осень');
-    break;
-    case 10:
-    alert('осень');
-    break;
-    case 11:
-    alert('осень');
-    break;
-    case 12:
-    alert('зима');
-    break;
-    default: alert('Такого месяца не существует!');
-    break;
-
-};
+ 
