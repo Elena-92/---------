@@ -26,27 +26,31 @@
             line-height: 20px;
             text-align: center;
             height: 60px;
+            width: 296px;
+            margin-left: 20px;
             }
            &__text-1{
             font-size: 16px;
            }
-        &__button-link {
+        &__button{
             font-size: 16px;
-
+            margin-left: 46px;
+            height: 55px;
+}
         }
     }
 
     .scrollbar {
         height: 51px;
-        gap: 27px;
+        gap: 10px;
 
-        &__item {
+        &-item {
             gap: 27px;
             align-items: center;
         }
         &__text {
             font-size: 16px;
-            gap: 6px;
+            margin-left: 18px;
         }
         &__mobile {
             display: flex;
@@ -105,4 +109,3 @@
             line-height: 20px;
         }
     }
-}
