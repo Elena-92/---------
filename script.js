@@ -31,6 +31,7 @@ let squaredNumber = anotherNumber => {
 alert(squaredNumber(8));
 
 
+
 //Task#4
 function age() {
     let userAge = Number(prompt('Сколько тебе лет?'));
