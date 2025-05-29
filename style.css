@@ -329,27 +329,28 @@ button {
     line-height: 20px;
     text-align: center;
     height: 60px;
+    width: 296px;
+    margin-left: 20px;
   }
   .top__text-1 {
     font-size: 16px;
-    margin-left: 20px;
   }
-  .top__button{
+  .top__button {
     font-size: 16px;
-    margin-left: 44px;
-    width: 285px;
+    margin-left: 46px;
+    height: 55px;
   }
   .scrollbar {
     height: 51px;
-    gap: 27px;
+    gap: 10px;
   }
-  .scrollbar__item {
+  .scrollbar-item {
     gap: 27px;
     align-items: center;
   }
   .scrollbar__text {
     font-size: 16px;
-    gap: 6px;
+    margin-left: 18px;
   }
   .scrollbar__mobile {
     display: flex;
