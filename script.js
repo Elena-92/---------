@@ -7,9 +7,8 @@ alert(minFunc(6,6));
 
 //Task#2
 
-function evenNumber(Number) {
-    Number % 2 === 0;
-    if (Number === 0) {
+function evenNumber(b) {;
+    if (b % 2 === 0) {
         return('Число четное');
         }
         else {
