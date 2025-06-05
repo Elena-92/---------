@@ -56,7 +56,7 @@
                 <div class="img-games__text">Угадай число</div>
             </div>
             </a>
-            <a class="img-games__card"  href="#">
+            <a class="img-games__card"  href="#game2">
                 <div class="img-games__item img-games__item_2"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 2</div>
@@ -105,12 +105,12 @@
                     <button onclick="guessNumber()" type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
-                <a class="game-box__cart" href="#">
+                <a class="game-box__cart" id="game2" href="#">
                     <img class="game-box__img" src="./img/game2.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Простая арифметика</h4>
                     <p class="game-box__text">Попробуй решить простые арифметические задачи.</p>
-                    <button type="submit" class="game-box__button">Играть!</button>
+                    <button onclick="simpleArithmetic()" type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
                 <a class="game-box__cart game-box__cart_reverse" href="#">
@@ -149,6 +149,7 @@
     </section>
     <script src="script.js"></script>
     <script src="guess_a_number.js"></script>
+    <script src="simple_arithmetics.js"></script>
     </body>
     <footer class="footer">
         <p class="footer__text">Все права защищены.</p>
