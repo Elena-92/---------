@@ -63,28 +63,28 @@
                 <div class="img-games__text">Простая арифметика</div>
             </div>
             </a>
-            <a class="img-games__card"  href="#">
+            <a class="img-games__card"  href="#game3">
                 <div class="img-games__item img-games__item_3"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 3</div>
                 <div class="img-games__text">Переверни текст</div>
             </div>
             </a>
-            <a class="img-games__card" href="#">
+            <a class="img-games__card" href="#game4">
                 <div class="img-games__item img-games__item_4"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 4</div>
                 <div class="img-games__text">Камень, ножницы, <br>бумага</div> 
             </div>
             </a>
-            <a class="img-games__card img-games__card_top"  href="#">
+            <a class="img-games__card img-games__card_top"  href="#game5">
                 <div class="img-games__item img-games__item_5"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 5</div>
                 <div class="img-games__text">Простая викторина</div>
             </div>
             </a>
-            <a class="img-games__card" href="#">
+            <a class="img-games__card" href="#game6">
                 <div class="img-games__item img-games__item_6"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 6</div>
@@ -113,23 +113,23 @@
                     <button onclick="simpleArithmetic()" type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
-                <a class="game-box__cart game-box__cart_reverse" href="#">
+                <a class="game-box__cart game-box__cart_reverse" id="game3" href="#">
                     <img class="game-box__img" src="./img/game3.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Переверни текст</h4>
                     <p class="game-box__text">Попробуй ввести текст, который будет перевернут.</p>
-                    <button type="submit" class="game-box__button">Играть!</button>
+                    <button onclick="turnOverText()" type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
-                <a class="game-box__cart" href="#">
+                <a class="game-box__cart" id="game5" href="#">
                     <img class="game-box__img" src="./img/game4.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Викторина</h4>
                     <p class="game-box__text">Отвечай на вопросы викторины с вариантами ответов.</p>
-                    <button type="submit" class="game-box__button">Играть!</button>
+                    <button onclick="simpleQuizGame()" type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
-                <a class="game-box__cart game-box__cart_reverse" href="#">
+                <a class="game-box__cart game-box__cart_reverse" id="game4" href="#">
                     <img class="game-box__img" src="./img/game5.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Камень,<br>ножницы,<br>бумага</h4>
@@ -137,7 +137,7 @@
                     <button type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
-                <a class="game-box__cart" href="#">
+                <a class="game-box__cart" id="game6" href="#">
                     <img class="game-box__img" src="./img/game6.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Генератор<br> случайных<br> цветов</h4>
@@ -150,6 +150,8 @@
     <script src="script.js"></script>
     <script src="guess_a_number.js"></script>
     <script src="simple_arithmetics.js"></script>
+    <script src="turn_the_text_over.js"></script>
+    <script src="quiz.js"></script>
     </body>
     <footer class="footer">
         <p class="footer__text">Все права защищены.</p>
