@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lorem ipsum dolor sit .</title>
+</head>
+<body>
+        <h1 id="myParagraph">Работа с querySelectorAll</h1>
+
+        <p class="description">
+            Исходный текст блока 1.
+        </p>
+        
+        <p class="other-class">
+            Исходный текст абзаца 2.
+        </p>
+    
+        <p class="description">
+            Исходный текст блока 3.
+        </p>
+
+        <p>
+            Этот абзац не имеет классов и НЕ будет изменен.
+        </p>
+    
+        
+        <button id="runScriptButton">Изменить текст</button>
+
+    <script>
+        const runButton = document.querySelector('#runScriptButton');
+
+        runButton.addEventListener('click', function() {
+            
+            const descriptionElements = document.querySelectorAll('.description');
+            descriptionElements.forEach(element => {
+                element.textContent = 'Измененный текст';
+                element.style.backgroundColor = '#e0ffff'; 
+        });
+    });
+
+    </script>
+
+</body>
+</html>
