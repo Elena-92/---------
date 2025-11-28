@@ -5,17 +5,17 @@
     <title>Изменение  текста в заголовке</title>
 </head>
 <body>
-        <p id="myParagraph">Этот текст изначально такой. Нажмите кнопку ниже, чтобы изменить его цвет.</p>
+        <h1 id="mainTitle">Этот текст изначально такой. Нажмите кнопку ниже, чтобы изменить его.</h1>
         
-        <button id="changeColorButton">Изменить текст</button>
+        <button id="changeTextButton">Изменить текст</button>
 
     <script>
-        const paragraph = document.querySelector('#myParagraph');
-        const button = document.querySelector('#changeColorButton');
+        const titleElement = document.querySelector('#mainTitle');
+        const textButton = document.querySelector('#changeTextButton');
 
-        button.addEventListener('click', function() {
+        changeTextButton.addEventListener('click', function() {
             
-            paragraph.style.color = 'blue';
+            titleElement.textContent = 'Привет, мир!';
 
         });
 
