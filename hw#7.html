@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удаление первого элемента</title>
+</head>
+<body>
+    <h1>Удаление первого элемента с классом "description"</h1>
+
+    <button id="removeButton">Удалить элемент с классом "description"</button>
+
+    <p class="description">
+        Этот абзац будет удален первым.
+    </p>
+    
+    <p class="other">
+        Этот абзац не имеет нужного класса.
+    </p>
+
+    <p class="description">
+        Этот абзац будет удален вторым.
+    </p>
+
+    <p class="other">
+        Еще один абзац без класса.
+    </p>
+
+    <script>
+        const removeButton = document.querySelector('#removeButton');
+
+        removeButton.addEventListener('click', function() {
+            
+            const firstDescriptionElement = document.querySelector('.description');
+
+            
+            if (firstDescriptionElement) {
+               
+                firstDescriptionElement.remove();
+                console.log("Элемент удален.");
+            } else {
+                alert("Все элементы с классом 'description' уже удалены.");
+            }
+
+        });
+    </script>
+
+</body>
+</html>
+    
+</body>
+</html>
