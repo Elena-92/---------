@@ -1,48 +1,46 @@
 function rockScissorsPaperGame() {
 
     const randomItems = ["камень", "ножницы", "бумага"];
+    const regexp = /^[а-яА-Я]+$/;
 
     let playerAnswer; 
 
     const getRandomItem = () => Math.floor(Math.random() * randomItems.length);
+    const computerChoice = randomItems[getRandomItem()]; 
+      do {
+        
+        playerAnswer = prompt("Введите \"камень\", \"ножницы\" или \"бумага\" (или нажмите Отмена)");
+            if (playerAnswer === null) {
+            alert("Игра отменена пользователем.");
+            return; 
+        }
 
-    const computerChoice = randomItems[getRandomItem()];
+        const normalizedAnswer = playerAnswer.trim().toLowerCase();
+        
+        const isValidInput = regexp.test(normalizedAnswer) && randomItems.includes(normalizedAnswer);
 
+     if (isValidInput) {
+            
+            alert(`Выбор компьютера: ${computerChoice}`);
 
-
-    switch (computerChoice) {
-        case 'камень':
-            computerChoice === 'камень';
-            break;
-        case 'ножницы':
-            computerChoice === 'ножницы';
-            break; 
-        default: computerChoice === 'бумага';
-            break;
-    }
-
-    const regexp = /^[а-яА-Я]*$/;
-
-
-    do {
-        playerAnswer = prompt("Введите \"камень\", \"ножницы\" или \"бумага\"");
-            if (regexp.test(playerAnswer)) {
-                if (playerAnswer.toLowerCase() === computerChoice) {
-                    alert(`Выбор компьютера: ${computerChoice}`);
-                    alert("Ничья!");
-                } else if (playerAnswer.toLowerCase() !== computerChoice) {
-                    alert(`Выбор компьютера: ${computerChoice}`);
-                    alert("Компьютер победил");
-
-                } else {
-                    alert(`Выбор компьютера: ${computerChoice}`);
-                }
-
-
+            if (normalizedAnswer === computerChoice) {
+                alert("Ничья!");
+            } else if (
+                (normalizedAnswer === "камень" && computerChoice === "ножницы") ||
+                (normalizedAnswer === "ножницы" && computerChoice === "бумага") ||
+                (normalizedAnswer === "бумага" && computerChoice === "камень")
+            ) {
+                alert("Вы победили!");
             } else {
-                alert("Не верно введено слово") 
+                alert("Компьютер победил!");
             }
+           
+            return; 
 
+        } else {
+         
+            alert("Неверный ввод. Пожалуйста, введите 'камень', 'ножницы' или 'бумага'.");
+        }
 
-    } while (!regexp.test(playerAnswer));
-}    
+    } while (true);
+}  
