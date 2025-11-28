@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lorem ipsum dolor sit .</title>
+</head>
+<body>
+        <h1 id="myParagraph">Добавление элементов с помощью JavaScript</h1>
+
+        <button id="addButton">Изменить текст</button>
+        <div id="container">
+        </div>
+    <script>
+        const addButton = document.querySelector('#addButton');
+        const container = document.querySelector('#container');
+        let count = 0;
+           addButton.addEventListener('click', function() {
+            
+            const newParagraph = document.createElement('p');
+            count++;
+            newParagraph.textContent = 'Новый абзац №' + count;
+            newParagraph.classList.add('new-paragraph');
+            container.appendChild(newParagraph);
+            document.body.appendChild(newParagraph);
+    });
+
+    </script>
+
+</body>
+</html>
