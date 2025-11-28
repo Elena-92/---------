@@ -1,47 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Скрыть/Показать текст</title>
-    <style>
-       
-        .hidden {
-            display: none;
-        }
-        
-        button {
-            padding: 15px 15px;
-            font-size: 16px;
-        }
-        
-    </style>
+    <title>Изменение цвета текста</title>
 </head>
 <body>
-
-    <div class="container">
+        <p id="colorText">Этот текст изначально черный. Нажмите кнопку ниже, чтобы изменить его цвет.</p>
         
-        <h1 id="mainTitle">Это заголовок, который мы будем скрывать и показывать!</h1>
-        <button id="toggleButton">Скрыть/Показать текст</button>
-    </div>
-    <script>
-        const titleElement = document.querySelector('#mainTitle');
-        const toggleButton = document.querySelector('#toggleButton');
+        <button id="colorButton">Изменить цвет</button>
 
-        toggleButton.addEventListener('click', function() {
-       
-            titleElement.classList.toggle('hidden');
+    <script>
+        const paragraphElement = document.querySelector('#colorText');
+        const colorButton = document.querySelector('#colorButton');
+
+        colorButton.addEventListener('click', function() {
             
-           if (titleElement.classList.contains('hidden')) {
-             
-                toggleButton.textContent = 'Показать текст';
-               
-            } else {
-              
-                toggleButton.textContent = 'Скрыть текст';
-            }
+            paragraphElement.style.color = 'blue';
 
         });
+        
     </script>
 
 </body>
