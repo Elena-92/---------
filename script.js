@@ -1,156 +1,94 @@
-Задача: cоздайте кнопку, которая будет скрывать и показывать текст в заголовке 
-<h1>
-.
+//Task#1
+let text = "js";
+let textAltered = text.toUpperCase();
+console.log(textAltered);
 
-Инструкция:
-
-В HTML создайте заголовок 
-<h1>
- с текстом и кнопку.
-Используйте метод 
-querySelector
- для получения ссылок на заголовок и кнопку.
-Используйте событие 
-click
- и метод 
-addEventListener
-, чтобы скрывать и показывать заголовок при нажатии на кнопку.
-Как должно работать: нажатие на кнопку «Скрыть» скрывает текст заголовка. Повторное нажатие показывает текст снова.
-
-
-Критерии оценки
-Работа будет оценена по следующим критериям
-Созданы заголовок и кнопка.
-Для получения ссылки используется метод 
-querySelector
-.
-Чтобы скрывать и показывать заголовок, используются событие 
-click
- и метод 
-addEventListener
-.
-Результат работы загружен на GitHub, отправлена ссылка на pull request.
-
-Задание 2. Изменение стиля элемента
-Задача: создайте кнопку, которая изменяет цвет текста в элементе 
-<p>
-.
-
-Инструкция:
-
-В HTML создайте абзац 
-<p>
- и кнопку.
-Используйте метод 
-querySelector
- для получения ссылки на абзац и кнопку.
-Используйте событие 
-click
- и метод 
-addEventListener
-, чтобы изменить стиль элемента, например его цвет.
-Как должно работать: нажатие на кнопку «Изменить цвет» делает текст абзаца синим.
+//Task#2
+const searchElement = (elements) => {
+    const newArray = new Array();
+    const findIt = 'арбуз';
+    elements.forEach(element => {
+        if (element.toLowerCase().startsWith(findIt.toLowerCase())) {
+            newArray.push(element);
+        }
+    });
+    return newArray;
+}
+console.log(searchElement(['Астраханский арбуз',  'ВОЛжанин арбуз','Томаты', 'Принц Гамлет арбуз', 'арбуз Лунный', 'Арбузные дольки']));
 
 
-Критерии оценки
+//Task#3
+const num = 32.58884;
+console.log(`До меньшего целого ${Math.floor(num)}`);
+console.log(`До большего целого ${Math.ceil(num)}`);
+console.log(`До ближайшего целого ${Math.round(num)}`);
 
-Задание 3. Динамическое изменение текста
-Задача: создайте кнопку, которая меняет текст в заголовке 
-<h1>
-.
+//Task#4
+const numbers = [52, 53, 49, 77, 21, 32];
+let number = 0;
 
-Инструкция:
+for (let index = 0; index < numbers.length; index++) {
+    if (numbers[index] > number) {
+        number = numbers[index];
+    }
 
-В HTML создайте заголовок 
-<h1>
- с текстом и кнопку.
-Используйте метод 
-querySelector
- для получения ссылки на заголовок и кнопку.
-Используйте событие 
-click
- и метод 
-addEventListener
-, чтобы изменить текст заголовка при нажатии на кнопку.
-Как должно работать: нажатие на кнопку «Изменить текст» меняет текст заголовка на «Привет, мир!».
+}
+console.log(`Максимальное значение равно: ${number}`);
 
 
-Критерии оценки
+const toFindMin = () => {
+    return Math.min(52, 53, 49, 77, 21, 32);
+}
+console.log(`Минимальное значение равно: ${toFindMin()}`);
 
-Задание 4. Поиск и изменение элементов по классу
-Задача: найдите все элементы с классом 
-description
- и измените их текст на «Измененный текст».
+//Task#5
 
-Инструкция:
+const randomNumber = () => {
+    return Math.floor(Math.random() * 10 + 1);
+}
+console.log(randomNumber());
 
-В HTML создайте несколько элементов с классом 
-description
-.
-Используйте метод 
-querySelectorAll
- для поиска всех элементов с этим классом.
-Переберите найденные элементы и измените их текстовое содержимое с помощью свойства 
-textContent
-.
-Как должно работать: после выполнения скрипта все элементы с классом 
-description
- изменяют свой текст на «Измененный текст».
+//Task#6
 
+function randomArray(n) {
+    newArray = new Array();
+    let randomNum = Math.floor(Math.random() * n);
+    const newArrayLenth = n / 2;
+    for (let i = 0; i < newArrayLenth; i++) {
+        newArray.push(randomNum);
 
-Критерии оценки
+    }
+    return newArray;
+}
+console.log(randomArray(6));
+ 
+//Task#7
 
-Задание 5. Работа с querySelectorAll
-Задача: создайте несколько элементов 
-<p>
- с разными классами. Используйте 
-querySelectorAll
-, чтобы найти все элементы с классом 
-description
- и изменить их текст.
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min); 
+  }
+  console.log(getRandomInt(3, 8));
 
-Инструкция:
-
-В HTML создайте несколько абзацев 
-<p>
-, некоторые из них должны иметь класс 
-description
-.
-Используйте 
-querySelectorAll
- для поиска всех элементов с классом 
-description
-.
-Переберите найденные элементы и измените их текстовое содержимое.
-Как должно работать: после выполнения скрипта все элементы с классом 
-description
- изменяют свой текст на «Новый текст».
+//Task#8
+let todaysDate = new Date();
+console.log(todaysDate);
 
 
-Критерии оценки
+//Task#9
+let myDate = new Date();
+let date_1 = myDate.getDate();
+let date_2 = myDate.setDate(73);
+let date1Calculated = date_1 * 24 * 3600 * 1000;
+let result = new Date(date1Calculated + date_2);
+console.log(result);
+//Task#10
 
-Задание 6. Добавление нового элемента в DOM
-Задача: создайте кнопку, которая добавляет новый элемент 
-<p>
- с текстом в конец документа.
-
-Инструкция:
-
-В HTML создайте кнопку.
-Используйте метод 
-createElement
- для создания нового элемента.
-Используйте 
-appendChild
- для добавления нового элемента в конец документа при нажатии на кнопку.
-Как должно работать: нажатие на кнопку «Добавить элемент» добавляет в конец страницы новый абзац с текстом «Новый абзац».
-
-
-Критерии оценки
-
-Задание 7. Удаление элемента
-Задача: создайте кнопку, которая удаляет первый элемент 
-<p>
- с классом 
-description
-.
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+let newDate = new Date();
+let fullDate = "Дата: " + newDate.getDate() + " " + months[newDate.getMonth()] + " " + newDate.getFullYear() + " год " + " - это " + days[newDate.getDay()];
+let fullTime = "Время: " + newDate.toLocaleTimeString('ru-RU');
+console.log(fullDate);
+console.log(fullTime);
