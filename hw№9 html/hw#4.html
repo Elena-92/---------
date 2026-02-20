@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lorem ipsum dolor sit .</title>
+</head>
+<body>
+        <h1 id="myParagraph">Задача: найти и изменить текст по классу</h1>
+        <div class="description">
+            Исходный текст блока 1.
+        </div>
+        
+        <p class="description">
+            Исходный текст абзаца 2.
+        </p>
+    
+        <div class="description">
+            Исходный текст блока 3.
+        </div>
+    
+        
+        <button id="runScriptButton">Изменить текст</button>
+
+    <script>
+        const runButton = document.querySelector('#runScriptButton');
+        const button = document.querySelector('#changeColorButton');
+
+        runButton.addEventListener('click', function() {
+            
+            const descriptionElements = document.querySelectorAll('.description');
+            descriptionElements.forEach(element => {
+                element.textContent = 'Измененный текст';
+                element.style.backgroundColor = '#e0ffff'; 
+        });
+    });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Скрыть/Показать текст</title>
+    <style>
+
+        .hidden {
+            display: none;
+        }
+
+        button {
+            padding: 15px 15px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 id="mainTitle">Это заголовок, который мы будем скрывать и показывать!</h1>
+        <button id="toggleButton">Скрыть/Показать текст</button>
+    </div>
+    <script>
+        const titleElement = document.querySelector('#mainTitle');
+        const toggleButton = document.querySelector('#toggleButton');
+
+        toggleButton.addEventListener('click', function() {
+
+            titleElement.classList.toggle('hidden');
+
+           if (titleElement.classList.contains('hidden')) {
+
+                toggleButton.textContent = 'Показать текст';
+
+            } else {
+
+                toggleButton.textContent = 'Скрыть текст';
+            }
+
+        });
+    </script>
+
+</body>
+</html>

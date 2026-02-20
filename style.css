@@ -57,6 +57,7 @@ button {
   font-weight: 600;
 }
 .top__button {
+  display: block;
   width: 247px;
   height: 66px;
   border: 1px solid rgb(32, 32, 39);
@@ -65,16 +66,16 @@ button {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 600;
-  text-align: center;
   margin-top: 48px;
   transition: all 1s;
+}
+.top__button-text {
+  text-align: center;
+  padding-top: 16px;
 }
 .top__button__button:hover {
   background: #ffffff;
   color: #000000;
-}
-.top__button-link {
-  color: #FFFFFF;
 }
 
 .scrollbar {
@@ -90,7 +91,7 @@ button {
   padding: 27px 0;
   overflow: hidden;
 }
-.scrollbar__item {
+.scrollbar-item {
   display: flex;
   gap: 51px;
   flex-shrink: 0;
@@ -328,24 +329,28 @@ button {
     line-height: 20px;
     text-align: center;
     height: 60px;
+    width: 296px;
+    margin-left: 20px;
   }
   .top__text-1 {
     font-size: 16px;
   }
-  .top__button-link {
+  .top__button {
     font-size: 16px;
+    margin-left: 46px;
+    height: 55px;
   }
   .scrollbar {
     height: 51px;
-    gap: 27px;
+    gap: 10px;
   }
-  .scrollbar__item {
+  .scrollbar-item {
     gap: 27px;
     align-items: center;
   }
   .scrollbar__text {
     font-size: 16px;
-    gap: 6px;
+    margin-left: 18px;
   }
   .scrollbar__mobile {
     display: flex;

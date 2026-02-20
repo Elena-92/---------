@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменение  текста в заголовке</title>
+</head>
+<body>
+        <h1 id="mainTitle">Этот текст изначально такой. Нажмите кнопку ниже, чтобы изменить его.</h1>
+        
+        <button id="changeTextButton">Изменить текст</button>
+
+    <script>
+        const titleElement = document.querySelector('#mainTitle');
+        const textButton = document.querySelector('#changeTextButton');
+
+        changeTextButton.addEventListener('click', function() {
+            
+            titleElement.textContent = 'Привет, мир!';
+
+        });
+
+    </script>
+
+</body>
+</html>

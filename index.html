@@ -13,30 +13,30 @@
     <header class="top center">
         <p class="top__title">Добро пожаловать на мой сайт мини-игр</p>
         <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <a class="top__text-1" href="#h1">«Поехали!»</a> и <a class="top__text-1" href="#games">приступай.</a></p>
-        <button type="submit" class="top__button"><a class="top__button-link" href="#h1">Поехали!</a></button>       
+        <a class="top__button" href="#h1"><div class="top__button-text">Поехали!</div></a>      
     </header>
     <section class="scrollbar">
-        <div class="scrollbar__item">
+        <div class="scrollbar-item">
             <h3 class="scrollbar__text">Викторина</h3>
             <img src="./img/Star.png" alt="star" class="scrollbar__star">
             </div>
-        <div class="scrollbar__item">
+        <div class="scrollbar-item">
             <h3 class="scrollbar__text">Угадай число</h3>
             <img src="./img/Star.png" alt="star" class="scrollbar__star">
             </div>
-        <div class="scrollbar__item">
+        <div class="scrollbar-item">
             <h3 class="scrollbar__text">Переверни текст</h3>
-            <img src="./img/Star.png" alt="star" class="scrollbar_star">
+            <img src="./img/Star.png" alt="star" class="scrollbar__star">
             </div>
-        <div class="scrollbar__item">
+        <div class="scrollbar-item">
             <h3 class="scrollbar__text">Простая арифметика</h3>
             <img src="./img/Star.png" alt="star" class="scrollbar__star">
         </div>
-        <div class="scrollbar__item">
+        <div class="scrollbar-item">
             <h3 class="scrollbar__text">Камень, ножницы, бумага</h3>
             <img src="./img/Star.png" alt="star" class="scrollbar__star">
             </div>
-        <div class="scrollbar__item">
+        <div class="scrollbar-item">
             <h3 class="scrollbar__text">Генератор случайных цветов</h3>
             <img src="./img/Star.png" alt="star" class="scrollbar__star">
             </div>
@@ -49,42 +49,42 @@
         Все игры доступны для пользования.</p>
         
         <div class="img-games">
-            <a class="img-games__card"  href="#">
+            <a class="img-games__card" href="#game1">
                 <div class="img-games__item img-games__item_1"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 1</div>
                 <div class="img-games__text">Угадай число</div>
             </div>
             </a>
-            <a class="img-games__card"  href="#">
+            <a class="img-games__card"  href="#game2">
                 <div class="img-games__item img-games__item_2"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 2</div>
                 <div class="img-games__text">Простая арифметика</div>
             </div>
             </a>
-            <a class="img-games__card"  href="#">
+            <a class="img-games__card"  href="#game3">
                 <div class="img-games__item img-games__item_3"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 3</div>
                 <div class="img-games__text">Переверни текст</div>
             </div>
             </a>
-            <a class="img-games__card" href="#">
+            <a class="img-games__card" href="#game4">
                 <div class="img-games__item img-games__item_4"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 4</div>
                 <div class="img-games__text">Камень, ножницы, <br>бумага</div> 
             </div>
             </a>
-            <a class="img-games__card img-games__card_top"  href="#">
+            <a class="img-games__card img-games__card_top"  href="#game5">
                 <div class="img-games__item img-games__item_5"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 5</div>
                 <div class="img-games__text">Простая викторина</div>
             </div>
             </a>
-            <a class="img-games__card" href="#">
+            <a class="img-games__card" href="#game6">
                 <div class="img-games__item img-games__item_6"></div>
                 <div class="img-games__position">
                 <div class="img-games__number">Игра № 6</div>
@@ -97,47 +97,47 @@
           <h3 class="game-box__title" id="games">Мини-игры</h3>
              
                <div class="game-box__content">
-                   <a class="game-box__cart game-box__cart_reverse" href="#">
+                   <a class="game-box__cart game-box__cart_reverse" id="game1"  href="#">
                     <img class="game-box__img" src="./img/game1.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Угадай число</h4>
                     <p class="game-box__text">Попробуй угадать случайное число от 1 до 100.</p>
-                    <button type="submit" class="game-box__button">Играть!</button>
+                    <button onclick="guessNumber()" type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
-                <a class="game-box__cart" href="#">
+                <a class="game-box__cart" id="game2" href="#">
                     <img class="game-box__img" src="./img/game2.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Простая арифметика</h4>
                     <p class="game-box__text">Попробуй решить простые арифметические задачи.</p>
-                    <button type="submit" class="game-box__button">Играть!</button>
+                    <button onclick="simpleArithmetic()" type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
-                <a class="game-box__cart game-box__cart_reverse" href="#">
+                <a class="game-box__cart game-box__cart_reverse" id="game3" href="#">
                     <img class="game-box__img" src="./img/game3.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Переверни текст</h4>
                     <p class="game-box__text">Попробуй ввести текст, который будет перевернут.</p>
-                    <button type="submit" class="game-box__button">Играть!</button>
+                    <button onclick="turnOverText()" type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
-                <a class="game-box__cart" href="#">
+                <a class="game-box__cart" id="game5" href="#">
                     <img class="game-box__img" src="./img/game4.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Викторина</h4>
                     <p class="game-box__text">Отвечай на вопросы викторины с вариантами ответов.</p>
-                    <button type="submit" class="game-box__button">Играть!</button>
+                    <button onclick="simpleQuizGame()" type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
-                <a class="game-box__cart game-box__cart_reverse" href="#">
+                <a class="game-box__cart game-box__cart_reverse" id="game4" href="#">
                     <img class="game-box__img" src="./img/game5.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Камень,<br>ножницы,<br>бумага</h4>
                     <p class="game-box__text">Сыграй в популярную игру против компьютера.</p>
-                    <button type="submit" class="game-box__button">Играть!</button>
+                    <button  onclick="rockScissorsPaperGame()" type="submit" class="game-box__button">Играть!</button>
                 </div>
                 </a>
-                <a class="game-box__cart" href="#">
+                <a class="game-box__cart" id="game6" href="#">
                     <img class="game-box__img" src="./img/game6.png" alt="Числа">
                     <div class="game-box__description">
                     <h4 class="game-box__number">Генератор<br> случайных<br> цветов</h4>
@@ -147,7 +147,12 @@
                 </a>
                 </div>
     </section>
-    <script src="script.js"></script>
+    <script src="main.js/script.js"></script>
+    <script src="guess_a_number.js"></script>
+    <script src="simple_arithmetics.js"></script>
+    <script src="turn_the_text_over.js"></script>
+    <script src="quiz.js"></script>
+    <script src="paper.js"></script>
     </body>
     <footer class="footer">
         <p class="footer__text">Все права защищены.</p>
